@@ -1,0 +1,38 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+body {
+    width: 100%;
+}
+
+.textarea, .textarea2 {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: 50vh;
+    padding: 0;
+    outline: 0;
+    border: 1px solid grey;
+    border-bottom: 0px;
+    padding: 10px 10px;
+}
+
+.textarea2 {
+    padding-top: 46px;
+}
+
+.btn-convert, .btn-copy {
+    position: fixed;
+    left: 11%;
+}
+
+.btn-convert {
+    top: calc(50% - 34px);
+}
+
+.btn-copy {
+    top: calc(50% + 12px);
+}
