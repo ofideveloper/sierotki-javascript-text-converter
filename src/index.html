@@ -8,12 +8,16 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <textarea name="textarea" class="textarea" placeholder="Wklej tekst do przekonwertowania"></textarea>
-    <textarea name="textarea2" class="textarea2" placeholder="W tym polu pojawi się przekonwertowany tekst"></textarea>
+    <div class="textarea-outer">
+        <textarea name="textarea" class="textarea" placeholder="Wklej tekst do przekonwertowania"></textarea>
+        <button class="btn-convert">Konwertuj tekst</button>
+    </div>
 
-    <button class="btn-convert">Konwertuj tekst</button>
-    <button class="btn-copy" data-clipboard-target=".textarea2">Skopiuj zawartość do schowka</button>
-    
+    <div class="textarea-outer">
+        <textarea name="textarea2" class="textarea2" placeholder="W tym polu pojawi się przekonwertowany tekst"></textarea>
+        <button class="btn-copy" data-clipboard-target=".textarea2">Skopiuj zawartość do schowka</button>
+    </div>
+
     <script src="js/bundle.js"></script>
 </body>
 </html>

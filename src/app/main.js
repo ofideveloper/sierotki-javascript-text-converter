@@ -18,6 +18,8 @@ $(document).ready(function() {
 
 			clipboard = new Clipboard('.btn-copy');
 
+
+
 			$('textarea').on('focus', function(event) {
 				event.preventDefault()
 				$(this).select()
@@ -72,6 +74,7 @@ $(document).ready(function() {
 			}
 
 			$textArea2.val(convertedText).select()
+
 			return
 		}
 
@@ -86,4 +89,4 @@ $(document).ready(function() {
 
 	let app = new App()
 	app.init()
-});
+})

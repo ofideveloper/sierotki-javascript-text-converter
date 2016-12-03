@@ -8,11 +8,17 @@ body {
     width: 100%;
 }
 
-.textarea, .textarea2 {
+.textarea-outer {
     width: 80%;
     display: block;
     margin: 0 auto;
     height: 50vh;
+    position: relative;
+}
+
+.textarea, .textarea2 {
+    width: 100%;
+    height: 100%;
     padding: 0;
     outline: 0;
     border: 1px solid grey;
@@ -25,14 +31,15 @@ body {
 }
 
 .btn-convert, .btn-copy {
-    position: fixed;
-    left: 11%;
+    position: absolute;
+    top: auto;
+    left: 10px;
 }
 
 .btn-convert {
-    top: calc(50% - 34px);
+    bottom: 12px;
 }
 
 .btn-copy {
-    top: calc(50% + 12px);
+    top: 12px;
 }
