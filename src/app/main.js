@@ -8,6 +8,10 @@ $(document).ready(function() {
 	let App = function() {
 		let init, setupEvents, convertSpaces, notify,
 			$btnConvert = $('.btn-convert'),
+			$btnInfo = $('.btn-info'),
+			$btnEmail = $('.btn-email'),
+			$popupInfo = $('.popup-info'),
+			$popupClose = $('.popup-close'),
 			$textArea = $('.textarea'),
 			$textArea2 = $('.textarea2'),
 			$alert = $('.alert'),
@@ -35,6 +39,24 @@ $(document).ready(function() {
 			$btnConvert.on('click', function(event) {
 				event.preventDefault()
 				convertSpaces($textArea.val())
+			});
+
+			$btnInfo.on('click', function(event) {
+				event.preventDefault()
+				
+				if ($popupInfo.hasClass('visible')) {
+					$popupInfo.removeClass('visible')
+					$btnInfo.addClass('visible')
+				} else {
+					$popupInfo.addClass('visible')
+					$btnInfo.removeClass('visible')
+				}
+			});
+
+			$popupClose.on('click', function(event) {
+				event.preventDefault();
+				$popupInfo.removeClass('visible')
+				$btnInfo.addClass('visible')
 			});
 
 			$textArea.bind('paste', function() {

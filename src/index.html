@@ -16,16 +16,48 @@
 
     <div class="textarea-outer">
         <textarea name="textarea2" class="textarea2" placeholder="W tym polu pojawi się przekonwertowany tekst"></textarea>
-        <button class="btn-copy" data-clipboard-target=".textarea2">Skopiuj zawartość do schowka</button>
+        <button class="btn-copy" data-clipboard-target=".textarea2">Skopiuj zawartość do&nbsp;schowka</button>
     </div>
 
     <div class="alert">
         <p></p>
     </div>
 
-    <!-- <div class="btn-info">
+    <div class="btn-info">
         i
-    </div> -->
+    </div>
+    
+    <div class="popup-info visible">
+        <div class="popup-close">x</div>
+
+        <h2>
+            Sierotki
+        </h2>
+
+        <p>Sierotki to&nbsp;pozostawione na końcu wiersza litery typu 'a', 'w', 'z' itd., które zgodnie z&nbsp;zasadami języka polskiego powinny być umieszczone na&nbsp;początku nowego wiersza. </p>
+
+        <p>Jeśli umieszczasz tekst na&nbsp;stronie WWW /&nbsp;piszesz czasami ważne dokumenty w&nbsp;programie Microsoft WORD, to&nbsp;ta&nbsp;mini aplikacja z&nbsp;pewnością Ci&nbsp;się przyda. Aplikacja analizuje zdanie i&nbsp;zamienia spacje na&nbsp;<strong>twarde spacje</strong> w&nbsp;odpowiednich miejscach. Tak przekonwertowany tekst możesz umieścić, jako kod HTML na&nbsp;stronie WWW. Problem sierotek z&nbsp;głowy =&nbsp;)</p>
+
+        <p>Program w&nbsp;fazie testowej. W&nbsp;przypadku zauważeniu błędu <a href="#" class="btn-email"><strong>napisz do autora.</strong></a></p>
+        
+        <h3>Jak używać aplikacji wraz z&nbsp;edytorem tekstu WORD?</h3>
+
+        <ol>
+            <li>Przekonwertuj tekst.</li>
+            <li>Przekonwertowany tekst wklej do&nbsp;WORD.</li>
+            <li>Przejdź do&nbsp;<em>Edycja >&nbsp;Znajdź >&nbsp;Zamień</em>.</li>
+            <li>W okienku, które się pojawi znajdź pole <em>Przeszukaj dokument</em>. Wpisz w&nbsp;nim <strong>& nbsp;</strong>. (bez spacji po&nbsp;&)</li>
+            <li>Poniżej będzie kolejne pole <em>Zamień na</em>, w&nbsp;którym&nbsp;należy wcisnąć
+                <ul>
+                    <li><strong>Dla Windows:</strong> wciśnij Ctrl +&nbsp;⇧&nbsp;Shift +&nbsp;Spacja</li>
+                    <li><strong>Dla Mac:</strong> wciśnij Option +&nbsp;Spacja</li>
+                    <li><em>(nie przejmuj się, gdy&nbsp;nic nie zauważysz -&nbsp;właśnie wpisałaś /&nbsp;wpisałeś twardą spację, która&nbsp;jest nie widoczna =&nbsp;)</em></li>
+                </ul>
+            </li>
+            <li>Kliknij <em>Znajdź wszystko</em> i&nbsp;ciesz się poprawnie przeformatowanym dokumentem!</li>
+        </ol>
+
+    </div>
 
     <script src="js/bundle.js"></script>
 </body>
