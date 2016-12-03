@@ -6,6 +6,37 @@
 
 body {
     width: 100%;
+    font-family: 'Open Sans', Arial, 'Helvetica Neue', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.alert {
+    position: fixed;
+    bottom: -40px;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.3s ease;
+    color: #fff;
+    font-weight: bold;
+
+    &.success, &.error {
+        transition: 0.3s ease;
+        transform: translateY(-40px);
+    }
+
+    &.success {
+        background: green;
+    }
+
+    &.error {
+        background: red;
+        color: #000;
+    }
 }
 
 .textarea-outer {
@@ -27,7 +58,7 @@ body {
 }
 
 .textarea2 {
-    padding-top: 46px;
+    padding-top: 50px;
 }
 
 .btn-convert, .btn-copy {
