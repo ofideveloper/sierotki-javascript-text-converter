@@ -10,8 +10,13 @@ $(document).ready(function() {
 			$btnConvert = $('.btn-convert'),
 			$btnInfo = $('.btn-info'),
 			$btnEmail = $('.btn-email'),
+
 			$popupInfo = $('.popup-info'),
 			$popupClose = $('.popup-close'),
+
+			$tabTrigger = $('.tab-trigger'),
+			$tab = $('.tab'),
+
 			$textArea = $('.textarea'),
 			$textArea2 = $('.textarea2'),
 			$alert = $('.alert'),
@@ -51,6 +56,16 @@ $(document).ready(function() {
 					$popupInfo.addClass('visible')
 					$btnInfo.removeClass('visible')
 				}
+			});
+
+			$tabTrigger.on('click', 'a', function(event) {
+				event.preventDefault();
+				
+				$tabTrigger.find('a').removeClass('active')
+				$(this).addClass('active')
+
+				$tab.removeClass('visible')
+				$('.tab[data-tab="'+$(this).data('show')+'"]').addClass('visible')
 			});
 
 			$popupClose.on('click', function(event) {

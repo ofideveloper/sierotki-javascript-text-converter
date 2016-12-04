@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sierotki - wersja JavaScript</title>
+    <title>Sierota - wersja JavaScript</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -31,27 +31,49 @@
         <div class="popup-close">x</div>
 
         <h2>
-            Sierotki
+            Sierota, zawieszka - Twój tekst bez wiszących spójników na&nbsp;końcu wiersza
         </h2>
 
-        <p>Sierotki to&nbsp;pozostawione na końcu wiersza litery typu 'a', 'w', 'z' itd., które zgodnie z&nbsp;zasadami języka polskiego powinny być umieszczone na&nbsp;początku nowego wiersza. </p>
+        <p>Sierota to&nbsp;pozostawione na końcu wiersza spójniki, które zgodnie z&nbsp;zasadami języka polskiego powinny być umieszczone na&nbsp;początku nowego wiersza. </p>
 
-        <p>Jeśli umieszczasz tekst na&nbsp;stronie WWW /&nbsp;piszesz czasami ważne dokumenty w&nbsp;programie Microsoft WORD, to&nbsp;ta&nbsp;mini aplikacja z&nbsp;pewnością Ci&nbsp;się przyda. Aplikacja analizuje zdanie i&nbsp;zamienia spacje na&nbsp;<strong>twarde spacje</strong> w&nbsp;odpowiednich miejscach. Tak przekonwertowany tekst możesz umieścić, jako kod HTML na&nbsp;stronie WWW. Problem sierotek z&nbsp;głowy =&nbsp;)</p>
+        <p>Jeśli umieszczasz tekst na&nbsp;stronie WWW /&nbsp;piszesz czasami ważne dokumenty w&nbsp;programie Microsoft WORD, to&nbsp;ta&nbsp;mini aplikacja z&nbsp;pewnością Ci&nbsp;się przyda. Aplikacja analizuje podany tekst i&nbsp;zamienia spacje na&nbsp;<strong>twarde spacje</strong> w&nbsp;odpowiednich miejscach. Tak przekonwertowany tekst możesz umieścić, jako kod HTML na&nbsp;stronie WWW. Problem sierotek z&nbsp;głowy =&nbsp;)</p>
 
-        <p>Program w&nbsp;fazie testowej. W&nbsp;przypadku zauważeniu błędu <a href="#" class="btn-email"><strong>napisz do autora.</strong></a></p>
+        <p><strong>Appka w&nbsp;fazie testowej</strong>. W&nbsp;przypadku zauważeniu błędu napisz do autora na adres dominik.ofiara (małpa) gmail.com.</p>
         
         <h3>Jak używać aplikacji wraz z&nbsp;edytorem tekstu WORD?</h3>
 
-        <ol>
-            <li>Przekonwertuj tekst.</li>
-            <li>Przekonwertowany tekst wklej do&nbsp;WORD.</li>
+        <div class="tab-trigger">
+            <a href="#" data-show="tab-windows" class="active">Korzystam z Windows</a>
+            <a href="#" data-show="tab-macos" class="">Korzystam z OS X / macOS</a>
+        </div>
+    
+        <ol class="tab visible" data-tab="tab-windows">
+            <li>W pierwsze pole wklej lub wpisz tekst. Twój tekst będzie przetworzony z&nbsp;podglądem w&nbsp;drugim polu i&nbsp;automatycznie uzupełniony o&nbsp;tajemnicze znaki "&&nbsp;nbsp;", co&nbsp;oznacza, że&nbsp;w&nbsp;tym miejscu powinna znaleźć się twarda spacja.</li>
+            <li>Przekonwertowany tekst wklej do&nbsp;WORD. </li>
+            <li>W zakładce <em>Narzędzia główne</em> wyszukaj po&nbsp;prawej stronie ikonę lornetki z&nbsp;napisem Znajdź i&nbsp;kliknij na&nbsp;małą strzałkę obok. Po&nbsp;kliknięciu wybierz <em>Znajdź i&nbsp;zamień</em>.</li>
+            <li>W nowym okienku będą dwa pola. W&nbsp;pierwszym <em>Znajdź</em> wpisz <strong>& nbsp;</strong>. (bez spacji po&nbsp;&)</li>
+            <li>Poniżej przy polu <em>Zamień na</em>
+                <ul>
+                    <li>
+                        Wciśnij Ctrl + ⇧ Shift + Spacja
+                    </li>
+                    <li>
+                        <em>(nie przejmuj się, gdy&nbsp;nic nie zauważysz -&nbsp;właśnie wpisałaś /&nbsp;wpisałeś twardą spację, która&nbsp;jest niewidoczna =&nbsp;)</em>
+                    </li>
+                </ul>
+            </li>
+            <li>Kliknij <em>Zamień wszystko</em> i&nbsp;ciesz się poprawnie przeformatowanym dokumentem!</li>
+        </ol>
+
+        <ol class="tab" data-tab="tab-macos">
+            <li>W pierwsze pole wklej lub wpisz tekst. Twój tekst będzie przetworzony z&nbsp;podglądem w&nbsp;drugim polu i&nbsp;automatycznie uzupełniony o&nbsp;tajemnicze znaki "&&nbsp;nbsp;", co&nbsp;oznacza, że&nbsp;w&nbsp;tym miejscu powinna znaleźć się twarda spacja.</li>
+            <li>Przekonwertowany tekst wklej do&nbsp;WORD. </li>
             <li>Przejdź do&nbsp;<em>Edycja >&nbsp;Znajdź >&nbsp;Zamień</em>.</li>
             <li>W okienku, które się pojawi znajdź pole <em>Przeszukaj dokument</em>. Wpisz w&nbsp;nim <strong>& nbsp;</strong>. (bez spacji po&nbsp;&)</li>
             <li>Poniżej będzie kolejne pole <em>Zamień na</em>, w&nbsp;którym&nbsp;należy wcisnąć
                 <ul>
-                    <li><strong>Dla Windows:</strong> wciśnij Ctrl +&nbsp;⇧&nbsp;Shift +&nbsp;Spacja</li>
-                    <li><strong>Dla Mac:</strong> wciśnij Option +&nbsp;Spacja</li>
-                    <li><em>(nie przejmuj się, gdy&nbsp;nic nie zauważysz -&nbsp;właśnie wpisałaś /&nbsp;wpisałeś twardą spację, która&nbsp;jest nie widoczna =&nbsp;)</em></li>
+                    <li>Wciśnij ⌥ Option + Spacja</li>
+                    <li><em>(nie przejmuj się, gdy&nbsp;nic nie zauważysz -&nbsp;właśnie wpisałaś /&nbsp;wpisałeś twardą spację, która&nbsp;jest niewidoczna =&nbsp;)</em></li>
                 </ul>
             </li>
             <li>Kliknij <em>Znajdź wszystko</em> i&nbsp;ciesz się poprawnie przeformatowanym dokumentem!</li>

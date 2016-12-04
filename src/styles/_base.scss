@@ -91,6 +91,36 @@ ol {
     left: 10px;
 }
 
+.tab-trigger {
+    display: inline-block;
+    width: 100%;
+    min-height: 20px;
+
+    a {
+        text-decoration: none;
+        color: blue;
+        opacity: 0.6;
+        margin-right: 20px;
+
+        &.active {
+            font-weight: bold;
+            opacity: 1;
+        }
+    }
+}
+
+.tab {
+    display: none;
+
+    &.visible {
+        display: block;
+    }
+
+    em {
+        color: purple;
+    }
+}
+
 .btn-convert {
     bottom: 12px;
 }
@@ -161,5 +191,6 @@ ol {
 
     h2 {
         margin-top: 0;
+        padding-right: 40px;
     }
 }
